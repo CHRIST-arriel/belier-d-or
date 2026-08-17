@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Bélier d'Or</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div id="header-container"></div>
+
+  <main>
+    <section class="contact-header fade-in">
+      <div class="container">
+        <h1>Contactez-nous</h1>
+        <p>Une question ? Une suggestion ? Nous sommes à votre écoute.</p>
+      </div>
+    </section>
+
+    <section class="section contact-section container fade-in">
+      <div class="contact-grid">
+        
+        <div class="contact-left">
+          <h2>Nos Coordonnées</h2>
+          <p style="margin-bottom: 2rem;">Retrouvez-nous au cœur de Yamoussoukro ou contactez-nous directement.</p>
+          
+          <div class="contact-info-cards">
+            <div class="contact-card">
+              <i class="fas fa-map-marker-alt"></i>
+              <h3>Adresse</h3>
+              <p>Yamoussoukro, Quartier Chic<br>Côté d'Ivoire</p>
+            </div>
+            <div class="contact-card">
+              <i class="fas fa-phone-alt"></i>
+              <h3>Téléphone</h3>
+              <p>+225 00 00 00 00 00<br>+225 01 01 01 01 01</p>
+            </div>
+            <div class="contact-card">
+              <i class="fas fa-envelope"></i>
+              <h3>Email</h3>
+              <p>contact@belierdor.ci<br>info@belierdor.ci</p>
+            </div>
+            <div class="contact-card">
+              <i class="fab fa-whatsapp"></i>
+              <h3>WhatsApp</h3>
+              <p>+225 00 00 00 00 00</p>
+            </div>
+          </div>
+
+          <div style="margin-top: 2rem;">
+            <h3>Suivez-nous</h3>
+            <div class="social-links" style="justify-content: flex-start;">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-side">
+          <h2>Envoyez-nous un message</h2>
+          <form onsubmit="event.preventDefault(); alert('Message envoyé ! (Simulation)');">
+            <div class="form-group">
+              <label for="c-name">Nom</label>
+              <input type="text" id="c-name" class="form-control" required placeholder="Votre nom">
+            </div>
+            <div class="form-group">
+              <label for="c-email">Email</label>
+              <input type="email" id="c-email" class="form-control" required placeholder="Votre email">
+            </div>
+            <div class="form-group">
+              <label for="c-subject">Objet</label>
+              <input type="text" id="c-subject" class="form-control" placeholder="Sujet de votre message">
+            </div>
+            <div class="form-group">
+              <label for="c-message">Message</label>
+              <textarea id="c-message" class="form-control" rows="5" required placeholder="Comment pouvons-nous vous aider ?"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Envoyer le message</button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Google Maps Iframe (Simulation avec Yamoussoukro) -->
+      <div class="map-section fade-in">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63428.1824141662!2d-5.302305389473215!3d6.821321456905531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfb9937078345753%3A0x633513364f981035!2sYamoussoukro%2C%20C%C3%B4te%20d&#39;Ivoire!5e0!3m2!1sfr!2sfr!4v1683214567890!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <div id="footer-container"></div>
+
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+</html>

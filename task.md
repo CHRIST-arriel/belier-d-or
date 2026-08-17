@@ -1,0 +1,14 @@
+- `[x]` 1. Composants Globaux & Variables CSS (`css/variables.css`, `css/components.css`)
+  - `[x]` Update `variables.css` (add glassmorphism and shadow variables)
+  - `[x]` Update `components.css` (apply backdrop-filter, adjust card shadows, transition duration)
+- `[x]` 2. Animations Scroll-Triggered (GSAP)
+  - `[x]` Create `js/animations.js` with GSAP and ScrollTrigger logic
+- `[x]` 3. Fichiers HTML
+  - `[x]` Add GSAP CDN scripts to `index.html`, `menu.html`, `about.html`, `contact.html`, `gallery.html`, `reservation.html`, `order.html`
+  - `[x]` Add `animations.js` to all the above HTML files
+- `[x]` 4. Affinement des pages spécifiques (`css/home.css`, `css/menu.css`)
+  - `[x]` Update `home.css` (Hero overlay, CTA button)
+  - `[x]` Update `menu.css` (Liquid Glass on menu cards, hover elevation)
+- `[x]` 5. Verification & Walkthrough
+  - `[x]` Verify GSAP animations run properly in browser
+  - `[x]` Create walkthrough.md

@@ -1,0 +1,101 @@
+/* Styles Spécifiques à la page Réservation - Bélier d'Or */
+
+.reservation-header {
+  padding-top: 150px;
+  padding-bottom: var(--spacing-lg);
+  background-color: var(--color-charcoal-black);
+  color: var(--color-white);
+  text-align: center;
+}
+
+.reservation-header h1 {
+  color: var(--color-spicy-yellow);
+}
+
+.reservation-section {
+  padding: var(--spacing-xl) 0;
+}
+
+.reservation-container {
+  display: flex;
+  gap: var(--spacing-xl);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.reservation-form-wrapper {
+  flex: 1;
+  background-color: var(--color-white);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.reservation-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.reservation-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-charcoal-black);
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.info-item i {
+  color: var(--color-tertiary);
+  font-size: 1.5rem;
+  margin-top: 0.2rem;
+}
+
+.info-item p {
+  margin: 0;
+  color: var(--color-charcoal-black);
+  font-weight: 500;
+}
+
+.info-item span {
+  display: block;
+  color: var(--color-gray);
+  font-size: 0.9rem;
+}
+
+.whatsapp-box {
+  margin-top: var(--spacing-md);
+  padding: var(--spacing-md);
+  background-color: rgba(46, 125, 50, 0.05);
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--color-accent-green);
+}
+
+.whatsapp-box p {
+  margin-bottom: 1rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .reservation-container {
+    flex-direction: column-reverse;
+  }
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+}

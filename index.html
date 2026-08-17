@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bélier d'Or - L'expérience culinaire africaine revisitée</title>
+  <meta name="description"
+    content="Découvrez le restaurant Bélier d'Or à Yamoussoukro. Une cuisine africaine moderne, premium et chaleureuse. Attiéké, alloco, foutou revisités.">
+
+  <!-- FontAwesome pour les icônes -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Fichiers CSS -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+
+  <!-- Injection de la Navbar -->
+  <div id="header-container"></div>
+
+  <!-- Contenu Principal -->
+  <main>
+    <!-- Hero Section -->
+    <!-- Hero Section avec Carrousel -->
+    <section class="hero-carousel">
+      <div class="carousel-container" id="hero-carousel">
+        <!-- Slide 1 -->
+        <div class="carousel-slide active" style="background-image: url('assets/images/interieur/621725674_956532920032734_1803479602741139590_n (1).jpg');">
+          <div class="hero-overlay"></div>
+          <div class="container hero-content text-center">
+            <h1>L’expérience culinaire<br><span>africaine revisitée</span></h1>
+            <p>Découvrez des saveurs authentiques dans un cadre chic et moderne à Yamoussoukro.</p>
+            <div class="hero-buttons">
+              <a href="reservation.html" class="btn btn-primary">Réserver une table</a>
+              <a href="order.html" class="btn btn-secondary" style="color:white; border-color:white;">Commander en
+                ligne</a>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="carousel-slide" style="background-image: url('assets/images/interieur/612292801_943634587989234_6343976107770816677_n.jpg');">
+          <div class="hero-overlay"></div>
+          <div class="container hero-content text-center">
+            <h1>Un cadre chic<br><span>& chaleureux</span></h1>
+            <p>L'endroit idéal pour vos dîners d'affaires ou vos moments en famille.</p>
+            <div class="hero-buttons">
+              <a href="about.html" class="btn btn-primary">Découvrir le restaurant</a>
+              <a href="contact.html" class="btn btn-secondary" style="color:white; border-color:white;">Nous trouver</a>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="carousel-slide" style="background-image: url('assets/images/repas/758690933_1109988191353872_913737348228278992_n.jpg');">
+          <div class="hero-overlay"></div>
+          <div class="container hero-content text-center">
+            <h1>Des saveurs<br><span>authentiques & modernes</span></h1>
+            <p>Le meilleur de la gastronomie ivoirienne, sublimé par notre chef.</p>
+            <div class="hero-buttons">
+              <a href="menu.html" class="btn btn-primary">Voir la carte</a>
+              <a href="order.html" class="btn btn-secondary" style="color:white; border-color:white;">Commander
+                maintenant</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contrôles du Carrousel -->
+      <div class="carousel-dots">
+        <span class="dot active" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+    </section>
+
+
+    <section class="section section-dark about-short">
+      <div class="container about-grid">
+        <div class="about-text fade-in">
+          <h2>Notre Histoire</h2>
+          <p>Le Bélier d'Or est né d'une passion : celle de redonner ses lettres de noblesse à la gastronomie ivoirienne et
+            africaine. Nous marions l'authenticité de nos recettes de grands-mères à la finesse de la cuisine
+            contemporaine.</p>
+          <a href="about.html" class="btn btn-secondary mt-1">En savoir plus</a>
+        </div>
+        <div class="about-img fade-in">
+          <div class="img-wrapper" style="background-image: url('assets/images/interieur/Gemini_Generated_Image_comf4dcomf4dcomf.jpg');"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section specialities">
+      <div class="container">
+        <div class="text-center fade-in">
+          <h2>Nos Spécialités</h2>
+          <p>Des plats traditionnels sublimés par notre chef.</p>
+        </div>
+
+        <div class="specialities-grid">
+          <!-- Item 1 -->
+          <div class="speciality-card fade-in">
+            <div class="card-img" style="background-image: url('assets/images/repas/poisson.jpg');"></div>
+            <div class="card-content">
+              <h3>Attiéké Poisson Braisé</h3>
+              <p>Poisson frais délicatement braisé aux épices douces, accompagné d'attiéké premium.</p>
+
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="speciality-card fade-in" style="transition-delay: 0.2s;">
+            <div class="card-img" style="background-image: url('assets/images/repas/foutou.jpg');"></div>
+            <div class="card-content">
+              <h3>Foutou Banane</h3>
+              <p>La douceur de la banane plantain pilée, servie avec une sauce graine riche et onctueuse.</p>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="speciality-card fade-in" style="transition-delay: 0.4s;">
+            <div class="card-img" style="background-image: url('assets/images/repas/Alloco\ &\ Poulet\ DG.jpg');"></div>
+            <div class="card-content">
+              <h3>Alloco & Poulet DG</h3>
+              <p>Bananes plantains frites dorées à la perfection, accompagnées de notre tendre poulet revisité.</p>
+              </div>
+          </div>
+        </div>
+        <div class="text-center fade-in" style="margin-top: 3rem; transition-delay: 0.6s;">
+          <a href="menu.html" class="card-link">Découvrir le menu <i class="fas fa-arrow-right"></i></a>
+        </div>
+            
+      </div>
+    </section>
+
+    <!-- Section Témoignages -->
+    <section class="section testimonials-section">
+      <div class="container">
+        <div class="text-center fade-in">
+          <h2>Ce que disent nos clients</h2>
+          <p>La satisfaction de nos convives est notre plus grande fierté.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Témoignage 1 -->
+          <div class="testimonial-card fade-in">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"Une expérience culinaire inoubliable ! L'attiéké poisson braisé est d'une finesse rare. Le cadre chic et chaleureux complète parfaitement le repas."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar"><i class="fas fa-user-circle"></i></div>
+              <div class="author-info">
+                <h4>Kouassi Jean-Marc</h4>
+                <span>Yamoussoukro</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Témoignage 2 -->
+          <div class="testimonial-card fade-in" style="transition-delay: 0.2s;">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"Le Bélier d'Or est devenu notre lieu incontournable pour nos événements. Le service est irréprochable et les saveurs nous transportent à chaque visite."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar"><i class="fas fa-user-circle"></i></div>
+              <div class="author-info">
+                <h4>Sarah Bamba</h4>
+                <span>Abidjan</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Témoignage 3 -->
+          <div class="testimonial-card fade-in" style="transition-delay: 0.4s;">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"Mention spéciale pour le Foutou Banane sauce graine. Une véritable explosion de saveurs authentiques présentées avec beaucoup d'élégance."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar"><i class="fas fa-user-circle"></i></div>
+              <div class="author-info">
+                <h4>Yao Désiré</h4>
+                <span>Yamoussoukro</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Puces pour Carrousel Mobile -->
+        <div class="testimonials-dots">
+          <span class="testimonial-dot active" onclick="scrollTestimonial(0)"></span>
+          <span class="testimonial-dot" onclick="scrollTestimonial(1)"></span>
+          <span class="testimonial-dot" onclick="scrollTestimonial(2)"></span>
+        </div>
+      </div>
+    </section>
+
+  <script>
+    function scrollTestimonial(index) {
+      const grid = document.querySelector('.testimonials-grid');
+      const cards = document.querySelectorAll('.testimonial-card');
+      const dots = document.querySelectorAll('.testimonial-dot');
+      if (grid && cards[index]) {
+        grid.scrollTo({
+          left: cards[index].offsetLeft - grid.offsetLeft,
+          behavior: 'smooth'
+        });
+        dots.forEach((dot, i) => dot.classList.toggle('active', i === index));
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const grid = document.querySelector('.testimonials-grid');
+      const dots = document.querySelectorAll('.testimonial-dot');
+
+      if (grid) {
+        grid.addEventListener('scroll', () => {
+          const scrollPos = grid.scrollLeft;
+          const cardWidth = grid.clientWidth;
+          const activeIndex = Math.round(scrollPos / (cardWidth > 0 ? cardWidth : 300));
+          dots.forEach((dot, i) => dot.classList.toggle('active', i === activeIndex));
+        });
+      }
+    });
+  </script>
+
+
+
+    <!-- Call to Action -->
+    <section class="section cta-section text-center">
+      <div class="container fade-in">
+        <h2>Prêt pour une explosion de saveurs ?</h2>
+        <p>Réservez dès maintenant ou faites-vous livrer directement chez vous.</p>
+        <div class="cta-buttons">
+          <a href="reservation.html" class="btn btn-primary">Réserver</a>
+          <a href="order.html" class="btn btn-secondary">Voir le Menu Complet</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Injection du Footer -->
+  <div id="footer-container"></div>
+
+  <!-- Fichiers JS -->
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+
+</html>

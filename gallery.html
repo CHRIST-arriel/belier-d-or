@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerie - Bélier d'Or</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div id="header-container"></div>
+
+  <main>
+    <section class="gallery-header fade-in">
+      <div class="container">
+        <h1>Notre Galerie</h1>
+        <p>Plongez dans l'univers visuel de Bélier d'Or.</p>
+      </div>
+    </section>
+
+    <section class="section gallery-section container fade-in">
+      <div class="gallery-grid">
+        <!-- Intérieur 1 - Salle principale -->
+        <div class="gallery-item">
+          <img src="assets/images/interieur/621725674_956532920032734_1803479602741139590_n (1).jpg" alt="Salle principale Bélier d'Or">
+          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <!-- Intérieur 2 - Bar vue 1 -->
+        <div class="gallery-item">
+          <img src="assets/images/interieur/612292801_943634587989234_6343976107770816677_n.jpg" alt="Bar du restaurant">
+          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <!-- Intérieur 3 - Bar vue 2 -->
+        <div class="gallery-item">
+          <img src="assets/images/interieur/613574091_943634481322578_2111115909794098828_n.jpg" alt="Bar élégant">
+          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <!-- Intérieur 4 - Tables dressées -->
+        <div class="gallery-item">
+          <img src="assets/images/interieur/618401858_956532780032748_5129419000170969242_n (1).jpg" alt="Tables dressées">
+          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <!-- Intérieur 5 - Équipe -->
+        <div class="gallery-item">
+          <img src="assets/images/interieur/Gemini_Generated_Image_comf4dcomf4dcomf.jpg" alt="Notre équipe">
+          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <!-- Intérieur 6 - Service buffet -->
+        <div class="gallery-item">
+          <img src="assets/images/interieur/628269466_965696325783060_8812311621116167741_n.jpg" alt="Service buffet">
+          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <!-- Intérieur 7 - Service bar -->
+        <div class="gallery-item">
+          <img src="assets/images/interieur/629213258_965696375783055_4086996230885139396_n.jpg" alt="Service au bar">
+          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <!-- Repas 1 - Crevettes sautées -->
+        <div class="gallery-item">
+          <img src="assets/images/repas/730140448_1080513914301300_3156922798997355370_n.jpg" alt="Crevettes sautées">
+          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <!-- Repas 2 - Alloco -->
+        <div class="gallery-item">
+          <img src="assets/images/repas/731068411_1080514020967956_2629651091572354681_n.jpg" alt="Alloco maison">
+          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <!-- Repas 3 - Boisson signature -->
+        <div class="gallery-item">
+          <img src="assets/images/repas/731834833_1080514477634577_5061267289370442657_n.jpg" alt="Boisson signature">
+          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <!-- Repas 4 - Crevettes frites -->
+        <div class="gallery-item">
+          <img src="assets/images/repas/748278502_1099263969092961_6052986551045844083_n.jpg" alt="Crevettes frites">
+          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <!-- Repas 5 - Poisson braisé -->
+        <div class="gallery-item">
+          <img src="assets/images/repas/758690933_1109988191353872_913737348228278992_n.jpg" alt="Poisson braisé">
+          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox Modal pour le Zoom -->
+    <div id="lightbox-modal" class="lightbox-modal">
+      <button class="lightbox-close" aria-label="Fermer la vue agrandie">&times;</button>
+      <div class="lightbox-wrapper">
+        <img id="lightbox-img" src="" alt="Vue agrandie">
+        <div id="lightbox-caption" class="lightbox-caption"></div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <div id="footer-container"></div>
+
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="js/animations.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const modal = document.getElementById('lightbox-modal');
+      const modalImg = document.getElementById('lightbox-img');
+      const captionText = document.getElementById('lightbox-caption');
+      const closeBtn = document.querySelector('.lightbox-close');
+      const galleryItems = document.querySelectorAll('.gallery-item');
+
+      galleryItems.forEach(item => {
+        item.addEventListener('click', () => {
+          const img = item.querySelector('img');
+          if (img) {
+            modal.classList.add('active');
+            modalImg.src = img.src;
+            captionText.textContent = img.alt || 'Bélier d\'Or';
+          }
+        });
+      });
+
+      const closeModal = () => {
+        modal.classList.remove('active');
+      };
+
+      if (closeBtn) closeBtn.addEventListener('click', closeModal);
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          closeModal();
+        }
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+          closeModal();
+        }
+      });
+    });
+  </script>
+</body>
+</html>

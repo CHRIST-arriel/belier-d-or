@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commander en Ligne - Bélier d'Or</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/order.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div id="header-container"></div>
+
+  <main>
+    <section class="order-header">
+      <div class="container">
+        <h1>Commande en Ligne</h1>
+        <p>Vos plats préférés, livrés chez vous en un clic.</p>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="order-layout">
+        
+        <!-- Menu Selection -->
+        <div class="order-main">
+          <div class="order-filters">
+            <button class="filter-btn active" data-category="all">Tous</button>
+            <button class="filter-btn" data-category="entrees">Entrées</button>
+            <button class="filter-btn" data-category="plats">Plats</button>
+            <button class="filter-btn" data-category="desserts">Desserts</button>
+            <button class="filter-btn" data-category="boissons">Boissons</button>
+          </div>
+          
+          <div class="order-grid" id="order-grid">
+            <!-- Injecté par JS -->
+          </div>
+        </div>
+
+        <!-- Cart Sidebar -->
+        <aside class="cart-sidebar">
+          <h2 class="cart-title"><i class="fas fa-shopping-bag"></i> Votre Panier</h2>
+          
+          <div class="cart-items" id="cart-items">
+            <!-- Injecté par JS -->
+          </div>
+
+          <div class="cart-summary">
+            <div class="summary-row">
+              <span>Sous-total</span>
+              <span id="subtotal">0 FCFA</span>
+            </div>
+            <div class="summary-row">
+              <span>Livraison</span>
+              <span>1 500 FCFA</span>
+            </div>
+            <div class="summary-row summary-total">
+              <span>Total</span>
+              <span id="total">0 FCFA</span>
+            </div>
+            
+            <button class="btn btn-primary" style="width:100%; margin-top:1.5rem;" onclick="simulateCheckout()">Commander Maintenant</button>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Mobile Cart Toggle -->
+  <div class="cart-toggle-btn" id="cart-toggle">
+    <i class="fas fa-shopping-cart"></i>
+    <span id="cart-count" style="position:absolute; top:-5px; right:-5px; background:var(--color-charcoal-black); color:white; width:22px; height:22px; border-radius:50%; font-size:0.7rem; display:none; align-items:center; justify-content:center; border:2px solid white;">0</span>
+  </div>
+
+  <!-- Footer -->
+  <div id="footer-container"></div>
+
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>

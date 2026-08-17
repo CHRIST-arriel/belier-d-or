@@ -1,0 +1,54 @@
+/* Palette de couleurs & Typographie - Bélier d'Or */
+:root {
+  /* Couleurs de la palette Bélier d'Or */
+  --color-primary: #1A302B;      /* Vert foncé (Primary) */
+  --color-secondary: #F9F7F2;    /* Crème chaud (Secondary) */
+  --color-tertiary: #D4AF37;     /* Or (Tertiary) */
+  --color-neutral: #4A4A4A;      /* Gris foncé (Neutral) */
+
+  /* Mappages de compatibilité pour le code existant */
+  --color-orange: var(--color-primary);
+  --color-charcoal-black: var(--color-primary);
+  --color-off-white: var(--color-secondary);
+  --color-spicy-yellow: var(--color-tertiary);
+  --color-accent-green: var(--color-tertiary);
+  --color-white: #FFFFFF;
+  --color-gray: var(--color-neutral);
+  --color-light-gray: #E0DDD5;   /* Gris clair teinté pour les bordures */
+
+  /* Typographie */
+  --font-primary: 'Montserrat', sans-serif;
+  --font-headline: 'Cormorant', serif;
+
+  /* Effets Liquid Glass (Glassmorphism) */
+  --glass-bg-light: rgba(255, 255, 255, 0.75);
+  --glass-bg-dark: rgba(26, 48, 43, 0.85);
+  --glass-blur: blur(16px);
+  --glass-border-light: 1px solid rgba(255, 255, 255, 0.4);
+  --glass-border-dark: 1px solid rgba(255, 255, 255, 0.1);
+
+  /* Ombres Premium (Plus douces et étendues) */
+  --shadow-sm: 0 4px 12px rgba(26, 48, 43, 0.05);
+  --shadow-md: 0 10px 30px rgba(26, 48, 43, 0.08);
+  --shadow-lg: 0 20px 40px rgba(26, 48, 43, 0.12);
+  --glass-shadow: 0 8px 32px 0 rgba(26, 48, 43, 0.1);
+
+  /* Transitions plus longues pour un ressenti premium */
+  --transition-fast: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Espacements */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 6rem;
+  
+  /* Arrondis */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+}

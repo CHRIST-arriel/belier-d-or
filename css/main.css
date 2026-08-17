@@ -1,0 +1,95 @@
+/* Styles Globaux - Bélier d'Or */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--color-off-white);
+  color: var(--color-charcoal-black);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Typographie */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-headline);
+  font-weight: 700;
+  color: var(--color-charcoal-black);
+  margin-bottom: var(--spacing-sm);
+}
+
+h1 { font-size: 3.5rem; line-height: 1.1; }
+h2 { font-size: 2.5rem; margin-bottom: var(--spacing-md); }
+h3 { font-size: 1.75rem; }
+
+p {
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-gray);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color var(--transition-fast);
+}
+
+ul {
+  list-style: none;
+}
+
+/* Utilitaires de Layout */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-sm);
+}
+
+.section {
+  padding: var(--spacing-xl) 0;
+}
+
+.section-dark {
+  background-color: var(--color-charcoal-black);
+  color: var(--color-off-white);
+}
+
+.section-dark h2, .section-dark h3 {
+  color: var(--color-off-white);
+}
+
+.section-dark p {
+  color: var(--color-light-gray);
+}
+
+.text-center { text-align: center; }
+
+/* Animations gérées par GSAP (js/animations.js) */
+.fade-in {
+  opacity: 0;
+}
+
+/* Fallback si JS désactivé */
+.no-js .fade-in {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+
+/* Responsive globaux */
+@media (max-width: 768px) {
+  h1 { font-size: 3.2rem; }
+  h2 { font-size: 2.2rem; }
+  .container { padding: 0 1.5rem; }
+  .section { padding: var(--spacing-lg) 0; }
+}

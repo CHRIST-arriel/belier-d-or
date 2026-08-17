@@ -1,0 +1,89 @@
+/* Styles Spécifiques à la page Contact - Bélier d'Or */
+
+.contact-header {
+  padding-top: 150px;
+  padding-bottom: var(--spacing-lg);
+  background-color: var(--color-charcoal-black);
+  color: var(--color-white);
+  text-align: center;
+}
+
+.contact-header h1 {
+  color: var(--color-spicy-yellow);
+}
+
+.contact-section {
+  padding: var(--spacing-xl) 0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xl);
+}
+
+.contact-info-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.contact-card {
+  background: var(--color-white);
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+  transition: transform var(--transition-fast);
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.contact-card i {
+  font-size: 2rem;
+  color: var(--color-tertiary);
+  margin-bottom: 1rem;
+}
+
+.contact-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-card p {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+.contact-form-side {
+  background: var(--color-white);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.map-section {
+  margin-top: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  height: 450px;
+  box-shadow: var(--shadow-md);
+}
+
+.map-section iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  .contact-info-cards {
+    grid-template-columns: 1fr;
+  }
+}
