@@ -1,7 +1,7 @@
 /* Styles Spécifiques à la page À propos - Bélier d'Or */
 
 .about-header {
-  padding-top: 140px;
+  padding-top: 150px;
   padding-bottom: var(--spacing-lg);
   background-color: var(--color-charcoal-black);
   color: var(--color-white);
@@ -13,11 +13,19 @@
 }
 
 .about-content-section {
+  max-width: 1200px;
+  margin: 0 auto;
   padding: var(--spacing-xl) 1.5rem;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .about-text {
-  padding: 0 0.5rem;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  direction: ltr;
+  text-align: left;
 }
 
 .about-content-grid {
@@ -26,14 +34,17 @@
   gap: var(--spacing-xl);
   align-items: center;
   margin-bottom: var(--spacing-xl);
-}
-
-.about-content-grid.reverse {
-  direction: rtl;
-}
-
-.about-content-grid.reverse > * {
   direction: ltr;
+}
+
+/* Inversion propre des colonnes sur grand écran sans hack direction: rtl */
+@media (min-width: 992px) {
+  .about-content-grid.reverse .about-text {
+    order: 2;
+  }
+  .about-content-grid.reverse .about-img {
+    order: 1;
+  }
 }
 
 .about-text h2 {
@@ -41,6 +52,7 @@
   margin-bottom: var(--spacing-md);
   position: relative;
   display: inline-block;
+  font-family: var(--font-headline);
 }
 
 .about-text h2::after {
@@ -59,6 +71,8 @@
   margin-bottom: 1.5rem;
   line-height: 1.8;
   color: var(--color-neutral);
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .about-img {
@@ -67,6 +81,8 @@
   overflow: hidden;
   box-shadow: var(--glass-shadow);
   border: var(--glass-border-light);
+  width: 100%;
+  margin: 0;
 }
 
 .about-img img {
@@ -85,7 +101,7 @@
 /* Chef Section */
 .chef-section {
   background-color: var(--color-secondary);
-  padding: var(--spacing-xl) 0;
+  padding: var(--spacing-xl) 1.5rem;
   text-align: center;
 }
 
@@ -96,7 +112,7 @@
   backdrop-filter: var(--glass-blur);
   -webkit-backdrop-filter: var(--glass-blur);
   border: var(--glass-border-light);
-  padding: var(--spacing-lg);
+  padding: var(--spacing-lg) 2rem;
   border-radius: var(--radius-lg);
   box-shadow: var(--glass-shadow);
   transition: transform var(--transition-normal), box-shadow var(--transition-normal);
@@ -141,9 +157,10 @@
   margin: 0 auto;
 }
 
-/* Responsivité perfectionnée */
+/* --- Responsivité Mobile & Tablette --- */
 @media (max-width: 991px) {
   .about-content-grid {
+    grid-template-columns: 1fr;
     gap: var(--spacing-lg);
     margin-bottom: var(--spacing-lg);
   }
@@ -154,42 +171,83 @@
 
 @media (max-width: 768px) {
   .about-header {
-    padding-top: 110px;
+    padding-top: 120px;
     padding-bottom: var(--spacing-md);
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
   }
+
   .about-content-section {
-    padding: var(--spacing-lg) 0;
+    padding-top: var(--spacing-lg);
+    padding-bottom: var(--spacing-lg);
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
   }
+
   .about-content-grid,
   .about-content-grid.reverse {
-    grid-template-columns: 1fr;
-    direction: ltr;
-    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    direction: ltr !important;
+    gap: 2rem;
     margin-bottom: 2.5rem;
+    width: 100%;
   }
-  .about-content-grid.reverse > * {
-    direction: ltr;
+
+  .about-content-grid.reverse .about-text,
+  .about-content-grid.reverse .about-img {
+    order: unset !important;
+    direction: ltr !important;
   }
+
+  .about-text {
+    width: 100%;
+    direction: ltr !important;
+    text-align: left;
+  }
+
   .about-text h2 {
     font-size: 1.8rem;
+    margin-bottom: 1rem;
   }
+
   .about-text p {
-    font-size: 1rem;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    text-align: left;
   }
+
+  .about-img {
+    margin: 0;
+    width: 100%;
+  }
+
   .about-img img {
     height: 260px;
+    width: 100%;
   }
+
   .chef-section {
-    padding: var(--spacing-lg) 0;
+    padding-top: var(--spacing-lg);
+    padding-bottom: var(--spacing-lg);
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
   }
+
   .chef-card {
-    padding: var(--spacing-md);
+    padding: 2rem 1.25rem;
+    margin: 0 auto;
+    width: 100%;
   }
+
   .chef-avatar {
-    width: 120px;
-    height: 120px;
+    width: 130px;
+    height: 130px;
   }
+
   .chef-card h3 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 }
+

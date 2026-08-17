@@ -82,16 +82,22 @@
 }
 
 .navbar-logo {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: var(--color-charcoal-black);
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  padding: 5px 0;
 }
 
-.navbar-logo span {
-  color: var(--color-tertiary);
+.navbar-logo-img {
+  height: 62px;
+  width: auto;
+  max-height: 70px;
+  object-fit: contain;
+  transition: transform var(--transition-fast);
+}
+
+.navbar-logo:hover .navbar-logo-img {
+  transform: scale(1.05);
 }
 
 .navbar-links {

@@ -19,81 +19,145 @@
     <section class="gallery-header fade-in">
       <div class="container">
         <h1>Notre Galerie</h1>
-        <p>Plongez dans l'univers visuel de Bélier d'Or.</p>
+        <p>Plongez dans l'univers visuel et gastronomique du Bélier d'Or.</p>
       </div>
     </section>
 
-    <section class="section gallery-section container fade-in">
-      <div class="gallery-grid">
+    <section class="gallery-section fade-in">
+      <!-- Filtres par catégorie -->
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">
+          <i class="fas fa-th-large"></i> Tous
+        </button>
+        <button class="filter-btn" data-filter="interieur">
+          <i class="fas fa-chair"></i> Cadre & Ambiance
+        </button>
+        <button class="filter-btn" data-filter="repas">
+          <i class="fas fa-utensils"></i> Gastronomie & Plats
+        </button>
+      </div>
+
+      <div class="gallery-grid" id="gallery-grid">
         <!-- Intérieur 1 - Salle principale -->
-        <div class="gallery-item">
+        <div class="gallery-item" data-category="interieur">
           <img src="assets/images/interieur/621725674_956532920032734_1803479602741139590_n (1).jpg" alt="Salle principale Bélier d'Or">
-          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+            <h3 class="gallery-overlay-title">Salle principale</h3>
+            <span class="gallery-overlay-tag">Cadre & Ambiance</span>
+          </div>
         </div>
         <!-- Intérieur 2 - Bar vue 1 -->
-        <div class="gallery-item">
+        <div class="gallery-item" data-category="interieur">
           <img src="assets/images/interieur/612292801_943634587989234_6343976107770816677_n.jpg" alt="Bar du restaurant">
-          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+            <h3 class="gallery-overlay-title">Bar du restaurant</h3>
+            <span class="gallery-overlay-tag">Cadre & Ambiance</span>
+          </div>
         </div>
         <!-- Intérieur 3 - Bar vue 2 -->
-        <div class="gallery-item">
+        <div class="gallery-item" data-category="interieur">
           <img src="assets/images/interieur/613574091_943634481322578_2111115909794098828_n.jpg" alt="Bar élégant">
-          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+            <h3 class="gallery-overlay-title">Bar Élégant</h3>
+            <span class="gallery-overlay-tag">Cadre & Ambiance</span>
+          </div>
         </div>
         <!-- Intérieur 4 - Tables dressées -->
-        <div class="gallery-item">
+        <div class="gallery-item" data-category="interieur">
           <img src="assets/images/interieur/618401858_956532780032748_5129419000170969242_n (1).jpg" alt="Tables dressées">
-          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+            <h3 class="gallery-overlay-title">Tables Dressées</h3>
+            <span class="gallery-overlay-tag">Cadre & Ambiance</span>
+          </div>
         </div>
         <!-- Intérieur 5 - Équipe -->
-        <div class="gallery-item">
+        <div class="gallery-item" data-category="interieur">
           <img src="assets/images/interieur/Gemini_Generated_Image_comf4dcomf4dcomf.jpg" alt="Notre équipe">
-          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+            <h3 class="gallery-overlay-title">Notre Équipe</h3>
+            <span class="gallery-overlay-tag">Cadre & Service</span>
+          </div>
         </div>
         <!-- Intérieur 6 - Service buffet -->
-        <div class="gallery-item">
-          <img src="assets/images/interieur/628269466_965696325783060_8812311621116167741_n.jpg" alt="Service buffet">
-          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+        <div class="gallery-item" data-category="interieur">
+          <img src="assets/images/interieur/628269466_965696325783060_8812311621116167741_n.jpg" alt="Espace buffet">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+            <h3 class="gallery-overlay-title">Espace Buffet</h3>
+            <span class="gallery-overlay-tag">Cadre & Ambiance</span>
+          </div>
         </div>
         <!-- Intérieur 7 - Service bar -->
-        <div class="gallery-item">
+        <div class="gallery-item" data-category="interieur">
           <img src="assets/images/interieur/629213258_965696375783055_4086996230885139396_n.jpg" alt="Service au bar">
-          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+            <h3 class="gallery-overlay-title">Service Cocktail & Bar</h3>
+            <span class="gallery-overlay-tag">Cadre & Ambiance</span>
+          </div>
         </div>
         <!-- Repas 1 - Crevettes sautées -->
-        <div class="gallery-item">
-          <img src="assets/images/repas/730140448_1080513914301300_3156922798997355370_n.jpg" alt="Crevettes sautées">
-          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+        <div class="gallery-item" data-category="repas">
+          <img src="assets/images/repas/730140448_1080513914301300_3156922798997355370_n.jpg" alt="Crevettes sautées aux épices">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+            <h3 class="gallery-overlay-title">Crevettes Sautées aux Épices</h3>
+            <span class="gallery-overlay-tag">Gastronomie</span>
+          </div>
         </div>
         <!-- Repas 2 - Alloco -->
-        <div class="gallery-item">
-          <img src="assets/images/repas/731068411_1080514020967956_2629651091572354681_n.jpg" alt="Alloco maison">
-          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+        <div class="gallery-item" data-category="repas">
+          <img src="assets/images/repas/731068411_1080514020967956_2629651091572354681_n.jpg" alt="Alloco croustillant maison">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+            <h3 class="gallery-overlay-title">Alloco Croustillant Maison</h3>
+            <span class="gallery-overlay-tag">Gastronomie</span>
+          </div>
         </div>
         <!-- Repas 3 - Boisson signature -->
-        <div class="gallery-item">
-          <img src="assets/images/repas/731834833_1080514477634577_5061267289370442657_n.jpg" alt="Boisson signature">
-          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+        <div class="gallery-item" data-category="repas">
+          <img src="assets/images/repas/731834833_1080514477634577_5061267289370442657_n.jpg" alt="Cocktail Signature Bélier d'Or">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+            <h3 class="gallery-overlay-title">Cocktail Signature</h3>
+            <span class="gallery-overlay-tag">Gastronomie</span>
+          </div>
         </div>
         <!-- Repas 4 - Crevettes frites -->
-        <div class="gallery-item">
-          <img src="assets/images/repas/748278502_1099263969092961_6052986551045844083_n.jpg" alt="Crevettes frites">
-          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+        <div class="gallery-item" data-category="repas">
+          <img src="assets/images/repas/748278502_1099263969092961_6052986551045844083_n.jpg" alt="Crevettes frites dorées">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+            <h3 class="gallery-overlay-title">Crevettes Frites Dorées</h3>
+            <span class="gallery-overlay-tag">Gastronomie</span>
+          </div>
         </div>
         <!-- Repas 5 - Poisson braisé -->
-        <div class="gallery-item">
-          <img src="assets/images/repas/758690933_1109988191353872_913737348228278992_n.jpg" alt="Poisson braisé">
-          <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+        <div class="gallery-item" data-category="repas">
+          <img src="assets/images/repas/758690933_1109988191353872_913737348228278992_n.jpg" alt="Poisson braisé à l'ivoirienne">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+            <h3 class="gallery-overlay-title">Poisson Braisé Ivoirien</h3>
+            <span class="gallery-overlay-tag">Gastronomie</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Lightbox Modal pour le Zoom -->
+    <!-- Lightbox Modal pour le Zoom & la Navigation -->
     <div id="lightbox-modal" class="lightbox-modal">
       <button class="lightbox-close" aria-label="Fermer la vue agrandie">&times;</button>
+      <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Photo précédente"><i class="fas fa-chevron-left"></i></button>
+      <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Photo suivante"><i class="fas fa-chevron-right"></i></button>
       <div class="lightbox-wrapper">
         <img id="lightbox-img" src="" alt="Vue agrandie">
         <div id="lightbox-caption" class="lightbox-caption"></div>
+        <div id="lightbox-counter" class="lightbox-counter"></div>
       </div>
     </div>
 
@@ -112,36 +176,104 @@
       const modal = document.getElementById('lightbox-modal');
       const modalImg = document.getElementById('lightbox-img');
       const captionText = document.getElementById('lightbox-caption');
+      const counterText = document.getElementById('lightbox-counter');
       const closeBtn = document.querySelector('.lightbox-close');
-      const galleryItems = document.querySelectorAll('.gallery-item');
+      const prevBtn = document.getElementById('lightbox-prev');
+      const nextBtn = document.getElementById('lightbox-next');
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const allGalleryItems = Array.from(document.querySelectorAll('.gallery-item'));
+      
+      let visibleItems = [...allGalleryItems];
+      let currentIndex = 0;
 
-      galleryItems.forEach(item => {
-        item.addEventListener('click', () => {
-          const img = item.querySelector('img');
-          if (img) {
-            modal.classList.add('active');
-            modalImg.src = img.src;
-            captionText.textContent = img.alt || 'Bélier d\'Or';
+      // Met à jour la liste des éléments visibles selon le filtre actif
+      function updateVisibleItems() {
+        const activeFilter = document.querySelector('.filter-btn.active').getAttribute('data-filter');
+        visibleItems = allGalleryItems.filter(item => {
+          const category = item.getAttribute('data-category');
+          if (activeFilter === 'all' || category === activeFilter) {
+            item.classList.remove('hide');
+            return true;
+          } else {
+            item.classList.add('hide');
+            return false;
           }
+        });
+      }
+
+      // Gestion des Filtres
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          updateVisibleItems();
         });
       });
 
-      const closeModal = () => {
-        modal.classList.remove('active');
-      };
+      // Affiche l'image selon son index dans les éléments visibles
+      function showImage(index) {
+        if (visibleItems.length === 0) return;
+        if (index < 0) index = visibleItems.length - 1;
+        if (index >= visibleItems.length) index = 0;
 
+        currentIndex = index;
+        const currentItem = visibleItems[currentIndex];
+        const img = currentItem.querySelector('img');
+        const titleEl = currentItem.querySelector('.gallery-overlay-title');
+
+        modalImg.style.opacity = '0';
+        setTimeout(() => {
+          modalImg.src = img.src;
+          captionText.textContent = titleEl ? titleEl.textContent : (img.alt || 'Bélier d\'Or');
+          counterText.textContent = `${currentIndex + 1} / ${visibleItems.length}`;
+          modalImg.style.opacity = '1';
+        }, 150);
+      }
+
+      // Ouvre le Lightbox
+      function openLightbox(item) {
+        updateVisibleItems();
+        const index = visibleItems.indexOf(item);
+        if (index !== -1) {
+          modal.classList.add('active');
+          showImage(index);
+          document.body.style.overflow = 'hidden';
+        }
+      }
+
+      // Ferme le Lightbox
+      function closeModal() {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+
+      // Événements d'ouverture sur chaque item
+      allGalleryItems.forEach(item => {
+        item.addEventListener('click', () => openLightbox(item));
+      });
+
+      // Boutons de contrôle
       if (closeBtn) closeBtn.addEventListener('click', closeModal);
+      if (prevBtn) prevBtn.addEventListener('click', (e) => { e.stopPropagation(); showImage(currentIndex - 1); });
+      if (nextBtn) nextBtn.addEventListener('click', (e) => { e.stopPropagation(); showImage(currentIndex + 1); });
+
+      // Clic sur l'arrière-plan du modal
       modal.addEventListener('click', (e) => {
-        if (e.target === modal) {
-          closeModal();
-        }
+        if (e.target === modal) closeModal();
       });
+
+      // Navigation au Clavier (Flèche Gauche, Flèche Droite, Échap)
       document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && modal.classList.contains('active')) {
-          closeModal();
-        }
+        if (!modal.classList.contains('active')) return;
+        if (e.key === 'Escape') closeModal();
+        if (e.key === 'ArrowLeft') showImage(currentIndex - 1);
+        if (e.key === 'ArrowRight') showImage(currentIndex + 1);
       });
+
+      // Initialisation
+      updateVisibleItems();
     });
   </script>
 </body>
 </html>
+

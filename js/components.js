@@ -4,7 +4,7 @@ const Navbar = `
   <nav class="navbar">
     <div class="container">
       <a href="index.html" class="navbar-logo">
-        <span>Bélier</span> d'Or
+        <img src="assets/images/logo/logobelier.png" alt="Bélier d'Or Logo" class="navbar-logo-img">
       </a>
       <button class="mobile-menu-btn" id="mobile-menu-btn">
         <i class="fas fa-bars"></i>
@@ -14,8 +14,8 @@ const Navbar = `
         <a href="menu.html">Menu</a>
         <a href="about.html">À propos</a>
         <a href="gallery.html">Galerie</a>
-        <a href="reservation.html">contact</a>
-        <a href="order.html" class="btn btn-primary" style="padding: 0.5rem 1rem; color: white;">Commander</a>
+        <a href="reservation.html">Contact</a>
+        <a href="order.html" class="btn btn-primary" style="padding: 0.5rem 1.2rem; color: white;">Commander</a>
       </div>
     </div>
   </nav>
@@ -26,7 +26,7 @@ const Footer = `
     <div class="container">
       <div class="footer-grid">
         <div class="footer-col">
-          <h3>Bélier d'Or</h3>
+          <img src="assets/images/logo/logobelier.png" alt="Bélier d'Or Logo" class="footer-logo-img" style="height: 65px; width: auto; margin-bottom: 1rem; filter: brightness(1.1);">
           <p>L'expérience culinaire africaine revisitée, au cœur de Yamoussoukro.</p>
           <div class="social-links">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
